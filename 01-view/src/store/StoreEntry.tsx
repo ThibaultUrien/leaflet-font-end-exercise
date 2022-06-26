@@ -1,8 +1,5 @@
 import { Entities, Paths, Store as StoreData, Stores } from "@model";
-import {
-  IconButton,
-  ListItem, TextField
-} from "@mui/material";
+import { IconButton, ListItem, TextField } from "@mui/material";
 import React, { FC, useCallback } from "react";
 import { useNeighborMap } from "../contexts";
 
@@ -97,8 +94,7 @@ export const StoreEntry: FC<StoreEntryProps> = ({
         size="small"
         value={pathData?.name}
         onChange={(evt) => setPathName(evt.target.value)}
-        label = {edited ? PATH_NAME_TEXT : undefined}
-        
+        label={edited ? PATH_NAME_TEXT : undefined}
       ></TextField>
     </ListItem>
   );

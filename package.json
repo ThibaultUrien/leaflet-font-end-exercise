@@ -1,5 +1,5 @@
 {
-  "name": "pix4d-font-end-task",
+  "name": "leaflet-font-end-exercise",
   "version": "0.1.0",
   "private": true,
   "main": "src/index.ts",

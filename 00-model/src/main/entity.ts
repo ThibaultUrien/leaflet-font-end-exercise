@@ -13,13 +13,14 @@ export function update<E extends Entity>(
   currentState: E,
   update: Update<E>
 ): E {
-  const newState =  currentState != update
-    ? Object.assign({}, currentState, update)
-    : currentState;
+  const newState =
+    currentState != update
+      ? Object.assign({}, currentState, update)
+      : currentState;
 
   // in case the update would contain an uuid
-  newState.uuid = currentState.uuid
-  return newState
+  newState.uuid = currentState.uuid;
+  return newState;
 }
 
 /**

@@ -29,7 +29,7 @@ export interface StoreMenuProps {
 const MenuContainer = styled.div`
   display: flex;
   flex-direction: column;
-`
+`;
 export const Store: FC<StoreMenuProps> = ({
   data,
   setData,
@@ -50,7 +50,11 @@ export const Store: FC<StoreMenuProps> = ({
 
   return (
     <MenuContainer>
-      <NewPathButton onClick={onNewPathClicked} path={editedPath} variant="contained"/>
+      <NewPathButton
+        onClick={onNewPathClicked}
+        path={editedPath}
+        variant="contained"
+      />
       {Stores.values(data).map((pathData) => {
         const edited =
           (editedPath && pathData.uuid === editedPath.uuid) || false;

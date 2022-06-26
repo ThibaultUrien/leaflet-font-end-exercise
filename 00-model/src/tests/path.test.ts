@@ -59,8 +59,11 @@ describe("Path operations", () => {
         expect(updatedPath.points.length).toBe(
           Math.max(existingPoints.length - 1, 0)
         );
-        expect(updatedPath.points).not.toEqual(expect.arrayContaining([expect.objectContaining({uuid: "point-removed"})]));
-       
+        expect(updatedPath.points).not.toEqual(
+          expect.arrayContaining([
+            expect.objectContaining({ uuid: "point-removed" }),
+          ])
+        );
       });
   });
 });

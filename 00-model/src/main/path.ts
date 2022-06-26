@@ -59,7 +59,7 @@ export function remove(path: Path, pointOrPointId: PoI | string): Path {
   if (removedPointIndex == -1) {
     return path;
   } else {
-    const updatedPoints = path.points.slice()
+    const updatedPoints = path.points.slice();
     updatedPoints.splice(removedPointIndex, 1);
     return Entities.update(path, { points: updatedPoints });
   }

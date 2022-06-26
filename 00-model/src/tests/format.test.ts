@@ -9,7 +9,8 @@ describe("Entity operations", () => {
   ];
 
   for (const [point, expectedString] of testCases)
-    it(s`should produce the expected strings ${[point, expectedString]}`,
+    it(
+      s`should produce the expected strings ${[point, expectedString]}`,
       () => {
         expect(Formats.formatPoint(point)).toEqual(expectedString);
       }

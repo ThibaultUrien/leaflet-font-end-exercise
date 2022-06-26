@@ -97,9 +97,9 @@ const HeadEditMakerStyled = styled(EditMarker)`
     font-size: 7em;
     bottom: -25%;
     left: 50%;
-    transform: translate(-50%,25%);
+    transform: translate(-50%, 25%);
     font-weight: bold;
-    animation: MoveUpDown 3s cubic-bezier(.46,.03,.52,.96) infinite;
+    animation: MoveUpDown 3s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
   }
 
   @keyframes MoveUpDown {

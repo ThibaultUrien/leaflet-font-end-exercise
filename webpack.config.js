@@ -42,13 +42,11 @@ const prodConfig = () => {
   };
 
   config.plugins.push(
-    new HtmlPlugin(
-      {
-        filename: path.resolve(__dirname, "index.html"),
-        template: path.resolve(__dirname, "src/index-github.html"),
-        inject: true,
-      }
-    )
+    new HtmlPlugin({
+      filename: path.resolve(__dirname, "index.html"),
+      template: path.resolve(__dirname, "src/index-github.html"),
+      inject: true,
+    })
   );
 
   return config;
