@@ -27,7 +27,8 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack build --mode production",
-    "format": "npx prettier --write ."
+    "format": "npx prettier --write .",
+    "test": "npm test -w 00-model"
   },
   "eslintConfig": {
     "extends": [

@@ -7,20 +7,19 @@ import { v5 as uuidv5 } from "uuid";
 export interface Entity {
   uuid: string;
 }
-
-export function same(e1: Entity, e2: Entity): boolean {
-  return e1.uuid == e2.uuid;
-}
-
 export type Update<E extends Entity> = Partial<Omit<E, "uuid">>;
 
 export function update<E extends Entity>(
   currentState: E,
   update: Update<E>
 ): E {
-  return currentState != update
+  const newState =  currentState != update
     ? Object.assign({}, currentState, update)
     : currentState;
+
+  // in case the update would contain an uuid
+  newState.uuid = currentState.uuid
+  return newState
 }
 
 /**

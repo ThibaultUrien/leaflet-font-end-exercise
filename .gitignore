@@ -359,6 +359,7 @@ MigrationBackup/
 
 # testing
 /coverage
+*/coverage
 
 # production
 /build
