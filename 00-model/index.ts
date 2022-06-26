@@ -12,9 +12,4 @@ export type { Point } from "./src/main/point";
 export type { Store } from "./src/main/store";
 export type { Persisted } from "./src/main/persisted";
 
-export type EntityOps = typeof Entities;
-export type PathOps = typeof Paths;
-export type PoIOps = typeof PoIs;
-export type StoreOps = typeof Stores;
-
 export { Entities, Paths, PoIs, Stores, Serdes, Formats };
