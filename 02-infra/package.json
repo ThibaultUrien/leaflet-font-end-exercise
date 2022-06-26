@@ -1,0 +1,22 @@
+{
+  "name": "02-infra",
+  "version": "1.0.0",
+  "description": "Inpleéentation of the IOs",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThibaultUrien/pix4d-font-end-task.git"
+  },
+  "author": "Thibault Urien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThibaultUrien/pix4d-font-end-task/issues"
+  },
+  "homepage": "https://github.com/ThibaultUrien/pix4d-font-end-task#readme",
+  "dependencies": {
+    "00-model": "^1.0.0"
+  }
+}
